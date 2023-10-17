@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://bei21.github.io/sitemap.xml
