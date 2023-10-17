@@ -120,9 +120,9 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
-blog_nav_title: blog # your blog must have a title for it to be displayed in the nav bar
-blog_description: a simple whitespace theme for academics
+blog_name: bei21 # blog_name will be displayed in your blog page
+blog_nav_title: Homepage of Bei Liu # your blog must have a title for it to be displayed in the nav bar
+blog_description: Academic homepage of Bei Liu
 permalink: /blog/:year/:title/
 
 # Pagination
@@ -272,8 +272,8 @@ display_categories: ['blockquotes'] # these categories will be displayed on the 
 
 scholar:
 
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Liu]
+  first_name: [Bei]
 
   style: apa
   locale: en
