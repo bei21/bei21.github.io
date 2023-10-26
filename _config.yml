@@ -41,7 +41,7 @@ repo_trophies:
 # will use title and url fields
 # Take a look to https://github.com/jekyll/jekyll-feed for more customization
 
-rss_icon: False
+rss_icon: True
 
 # -----------------------------------------------------------------------------
 # Layout
@@ -154,9 +154,9 @@ disqus_shortname:  # put your disqus shortname
 # External sources.
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
-external_sources:
-  - name: 
-    rss_url: 
+# external_sources:
+#   - name: 
+#     rss_url: 
 
 # -----------------------------------------------------------------------------
 # Collections
