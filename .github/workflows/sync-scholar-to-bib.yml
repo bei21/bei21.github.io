@@ -32,6 +32,9 @@ jobs:
           OUTPUT_BIB: "_bibliography/papers.bib"
           # Optional (recommended if you hit anti-bot):
           # SCRAPERAPI_KEY: ${{ secrets.SCRAPERAPI_KEY }}
+          TOP_SELECTED: "5"
+          SELECT_MODE: "recent_then_cited"
+
         run: |
           python scripts/sync_scholar_to_bib.py
 
