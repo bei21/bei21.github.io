@@ -1,21 +1,44 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-subtitle: <a href='#'>Microsoft Research Asia</a>
+subtitle: <strong>Senior Researcher</strong> at
+  <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/">
+    Microsoft Research Asia
+  </a>
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: false
   more_info: >
-    <p>No. 5, Danling Street, Haidian District</p>
-    <p>Beijing, China</p>
+    <p>📍 Beijing, China</p>
+    <p>🏢 Microsoft Research Asia</p>
+    <p>🎓 Visual Computing Group</p>
 
-news: true  # includes a list of news items
-latest_posts: true  # includes a list of the newest posts
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+news: true
+selected_papers: true
+social: true
 ---
 
-Bei Liu is a senior researcher in Multimodal Computing (MMC) Group, Microsoft Research Asia, Beijing. Her current research directions include multi-modality learning, vision-language pre-training, AI creation, and Embodied AI. Before joining Microsoft, she received her Ph.D. and master’s degree from the Department of Social Informatics, Kyoto University of Japan. She received a bachelor’s degree from the Institute of Software, Nanjing University, China.
+## 👋 Hi, I’m Bei Liu
+
+I am a **Senior Researcher** at Microsoft Research Asia.
+My research focuses on **Multimodal AI**, **Document Understanding**, and **AI Agents**.
+
+### 🔬 Research Interests
+
+- **Agent-Driven Document Understanding (ADU)**
+- **Vision-Language & Multimodal Learning**
+- **Video Understanding**
+- **Visual Question Answering**
+
+### 🎯 Current Focus
+
+I am particularly interested in enabling **agents that actively read, navigate,
+and reason over complex documents**, combining perception, planning, and tool use.
+
+### 🤝 Collaboration
+
+I’m open to research collaboration, academic visits,
+and supervising interns working on multimodal agents.
