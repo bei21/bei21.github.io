@@ -1,0 +1,44 @@
+name: Sync Google Scholar -> BibTeX
+
+on:
+  schedule:
+    # Every Sunday 00:00 UTC (Beijing 08:00)
+    - cron: "0 0 * * 0"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install deps
+        run: |
+          pip install --upgrade pip
+          pip install scholarly bibtexparser
+
+      - name: Sync scholar to bib
+        env:
+          SCHOLAR_USER_ID: "7IZyaZsAAAAJ"
+          OUTPUT_BIB: "_bibliography/papers.bib"
+          # Optional (recommended if you hit anti-bot):
+          # SCRAPERAPI_KEY: ${{ secrets.SCRAPERAPI_KEY }}
+        run: |
+          python scripts/sync_scholar_to_bib.py
+
+      - name: Commit & push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add _bibliography/papers.bib
+          git diff --staged --quiet || git commit -m "chore: sync publications from Google Scholar"
+          git push
