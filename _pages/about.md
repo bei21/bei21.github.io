@@ -19,7 +19,7 @@ profile:
 
 news: true
 selected_papers: true
-social: true
+social: false
 ---
 
 My research focuses on **Multimodal AI**, **Document Understanding**, and **AI Agents**.
