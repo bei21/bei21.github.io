@@ -2,6 +2,7 @@
 layout: about
 title: about
 permalink: /
+nav: false
 subtitle: Senior Researcher,
   <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/">
     Microsoft Research Asia</a>, Beijing.
@@ -11,9 +12,10 @@ profile:
   image: prof_pic.jpg
   image_circular: false
   more_info: >
-    <p>📍 Beijing, China</p>
-    <p>Microsoft Research Asia</p>
-    <p>Visual Computing Group</p>
+    <p style="font-family: sans-serif; font-size: 0.9rem;">📍 Beijing, China</p>
+    <p style="font-family: sans-serif; font-size: 0.9rem;">🏢 Microsoft Research Asia</p>
+    <p style="font-family: sans-serif; font-size: 0.9rem;">🔬 Visual Computing Group</p>
+
 
 news: true
 selected_papers: true
