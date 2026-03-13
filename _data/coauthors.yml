@@ -1,34 +1,31 @@
-"Adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+Fu:
+  - first_name: ["Jianlong", "J."]
+    url: https://jianlong-fu.github.io/
 
-"Podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+Guo:
+  - first_name: ["Baining", "B."]
+    url: https://www.microsoft.com/en-us/research/people/bainguo/
 
-"Rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+Luo:
+  - first_name: ["Chong", "C."]
+    url: https://www.microsoft.com/en-us/research/people/cluo/
 
-"Bach": 
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+Xue:
+  - first_name: ["Hongwei", "H."]
+    url: https://hwxue.github.io/
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+Sun:
+  - first_name: ["Yuchong", "Y."]
+    url: https://scholar.google.com/citations?user=PLACEHOLDER
 
-"Przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
+Yang:
+  - first_name: ["Jiange", "J."]
+    url: https://scholar.google.com/citations?user=PLACEHOLDER
 
-"Schrödinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
+Song:
+  - first_name: ["Ruihua", "R."]
+    url: https://www.microsoft.com/en-us/research/people/rsong/
 
-"Lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
-
-"Planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+Tan:
+  - first_name: ["Wenhui", "W."]
+    url: https://scholar.google.com/citations?user=PLACEHOLDER
