@@ -1,11 +1,10 @@
 ---
 layout: about
-title: About
+title: about
 permalink: /
-subtitle: <strong>Senior Researcher</strong> at
+subtitle: Senior Researcher,
   <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/">
-    Microsoft Research Asia
-  </a>
+    Microsoft Research Asia</a>, Beijing.
 
 profile:
   align: right
@@ -30,8 +29,6 @@ My research focuses on **Multimodal AI**, **Document Understanding**, and **AI A
 
 - **Agent-Driven Document Understanding (ADU)**
 - **Vision-Language & Multimodal Learning**
-- **Video Understanding**
-- **Visual Question Answering**
 
 ### 🎯 Current Focus
 
