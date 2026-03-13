@@ -385,3 +385,5 @@ jsonresume:
   - languages
   - interests
   - references
+
+lsi: false
