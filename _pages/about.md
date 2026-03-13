@@ -24,7 +24,7 @@ social: true
 
 My research focuses on **Multimodal AI**, **Document Understanding**, and **AI Agents**.
 I also serve as a Guest Associate Professor at Nagoya University in Japan. 
-Before joining Microsoft, I earned her Ph.D. and Master’s degrees from Kyoto University, Japan, under the guidance of Professors Katsumi Tanaka, Masatoshi Yoshikawa, and Makoto P. Kato. 
+Before joining Microsoft, I earned my Ph.D. and Master’s degrees from Kyoto University, Japan, under the guidance of Professors Katsumi Tanaka, Masatoshi Yoshikawa, and Makoto P. Kato. 
 I hold a Bachelor’s degree from Nanjing University, China.
 
 My current interest is in enabling agents that actively read, navigate, and reason over complex documents, combining perception, planning, and tool use.
