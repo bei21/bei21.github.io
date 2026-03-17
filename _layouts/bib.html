@@ -188,6 +188,23 @@
             <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
           {%- endif %}
           </div>
+          </div>
+
+          {%- if entry.award %}
+          <div class="award-badge" style="margin-top: 4px;">
+            <span style="
+              display: inline-block;
+              background-color: #f5a623;
+              color: #fff;
+              font-size: 0.75rem;
+              font-weight: 600;
+              padding: 2px 8px;
+              border-radius: 4px;
+              margin-bottom: 4px;
+            ">{{ entry.award }}</span>
+          </div>
+          {%- endif %}
+
           {% if site.enable_publication_badges %}
           {% assign entry_has_altmetric_badge = entry.altmetric or entry.doi or  entry.eprint or entry.pmid or entry.isbn %}
           {% assign entry_has_dimensions_badge = entry.dimensions or entry.doi or entry.pmid %}
