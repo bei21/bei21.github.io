@@ -188,25 +188,25 @@
             <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
           {%- endif %}
           </div>
-          </div>
+          <!-- ↑ links div closes here. col-sm-8 div is still OPEN below. -->
 
+          <!-- Award badge: INSIDE col-sm-8, right after links -->
           {%- if entry.award %}
-          <div class="award-badge" style="margin-top: 4px;">
+          <div class="award-badge" style="margin-top: 6px; margin-bottom: 2px;">
             <span style="
               display: inline-block;
               background-color: #f5a623;
               color: #fff;
               font-size: 0.75rem;
               font-weight: 600;
-              padding: 2px 8px;
+              padding: 2px 10px;
               border-radius: 4px;
-              margin-bottom: 4px;
             ">{{ entry.award }}</span>
           </div>
           {%- endif %}
 
           {% if site.enable_publication_badges %}
-          {% assign entry_has_altmetric_badge = entry.altmetric or entry.doi or  entry.eprint or entry.pmid or entry.isbn %}
+          {% assign entry_has_altmetric_badge = entry.altmetric or entry.doi or entry.eprint or entry.pmid or entry.isbn %}
           {% assign entry_has_dimensions_badge = entry.dimensions or entry.doi or entry.pmid %}
           {% if entry_has_altmetric_badge or entry_has_dimensions_badge %}
           <div class="badges">
@@ -253,5 +253,6 @@
             {% highlight bibtex %}{{ entry.bibtex | hideCustomBibtex }}{% endhighlight %}
           </div>
           {%- endif %}
-        </div>
-      </div>
+
+        </div><!-- ↑ closes col-sm-8 -->
+      </div><!-- ↑ closes row -->
