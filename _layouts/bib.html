@@ -210,10 +210,11 @@
             {%- assign _cdata = site.data.citations[_ckey] -%}
             {%- if _cdata.citations and _cdata.citations > 0 -%}
             <div class="scholar-citations" style="margin-top:4px; font-size:0.8rem; color:#555;">
-              📖 <a href="https://scholar.google.com/citations?view_op=view_citation&user=7IZyaZsAAAAJ&citation_for_view={{ _ckey }}" target="_blank" style="color:#555;">
-                Cited by {{ _cdata.citations }}
+              <a href="https://scholar.google.com/citations?view_op=view_citation&user=7IZyaZsAAAAJ&citation_for_view={{ _ckey }}"
+                 target="_blank" rel="noopener" style="color:#555; text-decoration:none;">
+                📖 Cited by {{ _cdata.citations }}
               </a>
-              <span style="color:#aaa; font-size:0.7rem;">(Google Scholar, {{ _cdata.updated }})</span>
+              <span style="color:#aaa; font-size:0.7rem;">(updated: {{ _cdata.updated }})</span>
             </div>
             {%- endif -%}
           {%- endif -%}
