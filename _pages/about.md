@@ -19,6 +19,7 @@ profile:
 
 news: true
 selected_papers: true
+awards: true
 social: false
 ---
 
