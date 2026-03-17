@@ -1,71 +1,141 @@
-% Manually curated from Google Scholar (user=7IZyaZsAAAAJ)
+% ============================================================
+% papers.bib — Bei Liu's selected publications
+% For al-folio academic homepage: https://github.com/bei21/bei21.github.io
+%
+% Key fields used:
+%   abbr         — venue badge shown next to the paper
+%   selected     — show on homepage selected papers section
+%   bibtex_show  — show expandable BibTeX block
+%   dimensions   — auto-updating citation count via Dimensions.ai
+%   award        — highlighted award badge (shown with emoji)
+%   arxiv        — links to arXiv preprint
+%   html         — links to official venue page
+% ============================================================
 
-@inproceedings{sun2022longform,
-  title     = {Long-Form Video-Language Pre-Training with Multimodal Temporal Contrastive Learning},
-  author    = {Sun, Yuchong and Xue, Hongwei and Song, Ruihua and Liu, Bei and Yang, Huan and Fu, Jianlong},
-  booktitle = {NeurIPS},
-  year      = {2022},
-  selected  = {true},
-  abbr      = {NeurIPS},
-  abstract  = {We propose a long-form video-language pre-training framework with multimodal temporal contrastive learning.}
-}
-
-@inproceedings{xue2022advancing,
-  title     = {Advancing High-Resolution Video-Language Representation with Large-Scale Video Transcriptions},
-  author    = {Xue, Hongwei and Hang, Tiankai and Zeng, Yanhong and Sun, Yuchong and Liu, Bei and Yang, Huan and Fu, Jianlong and Guo, Baining},
-  booktitle = {CVPR},
-  year      = {2022},
-  selected  = {true},
-  abbr      = {CVPR},
-  abstract  = {We introduce a large-scale video transcription dataset and a high-resolution video-language representation model.}
-}
-
-@inproceedings{xue2023clipvip,
-  title     = {CLIP-ViP: Adapting Pre-trained Image-Text Model to Video-Language Alignment},
-  author    = {Xue, Hongwei and Sun, Yuchong and Liu, Bei and Fu, Jianlong and Song, Ruihua and Li, Houqiang and Luo, Jiebo},
-  booktitle = {ICLR},
-  year      = {2023},
-  selected  = {true},
-  abbr      = {ICLR},
-  abstract  = {We adapt CLIP for video-language alignment via a video proxy mechanism and post-pretraining strategy.}
-}
-
-@inproceedings{yang2025spatiotemporal,
-  title     = {Spatiotemporal Predictive Pre-training for Robotic Motor Control},
-  author    = {Yang, Jiange and Liu, Bei and Fu, Jianlong and Pan, Bocheng and Wu, Gangshan and Wang, Limin},
-  booktitle = {NeurIPS},
-  year      = {2024},
-  selected  = {true},
-  abbr      = {NeurIPS},
-  abstract  = {We propose spatiotemporal predictive pre-training to improve robotic motor control via video prediction.}
+@inproceedings{tan2025rold,
+  abbr         = {MMM},
+  title        = {{RoLD}: Robot Latent Diffusion for Multi-task Policy Modeling},
+  author       = {Tan, Wenhui and Liu, Bei and Zhang, Junbo and Song, Ruihua and Fu, Jianlong},
+  booktitle    = {International Conference on Multimedia Modeling (MMM)},
+  pages        = {340--353},
+  year         = {2025},
+  doi          = {10.1007/978-981-96-2064-7_25},
+  arxiv        = {2403.07312},
+  html         = {https://link.springer.com/chapter/10.1007/978-981-96-2064-7_25},
+  selected     = {true},
+  bibtex_show  = {true},
+  dimensions   = {true},
+  award        = {🏆 Best Paper Award, MMM 2025},
+  abstract     = {We propose RoLD, a novel approach that decouples robot action trajectory encoding and control policy generation by leveraging latent action trajectory spaces. We pre-train a task-agnostic auto-encoder to project action trajectories into a latent space, then learn a diffusion model to generate actions. Experiments demonstrate 7%–29% improvement over baselines across eight tasks.}
 }
 
 @inproceedings{sun2024vico,
-  title     = {ViCo: Engaging Video Comment Generation with Human Preference Rewards},
-  author    = {Sun, Yuchong and Liu, Bei and Chen, Xu and Song, Ruihua and Fu, Jianlong},
-  booktitle = {MMAsia},
-  year      = {2024},
-  selected  = {true},
-  abbr      = {MMAsia},
-  note      = {Best Student Paper Runner-Up},
-  abstract  = {We propose ViCo, a video comment generation framework that aligns with human preferences via reward learning.}
+  abbr         = {MM Asia},
+  title        = {{ViCo}: Engaging Video Comment Generation with Human Preference Rewards},
+  author       = {Sun, Yuchong and Liu, Bei and Chen, Xu and Song, Ruihua and Fu, Jianlong},
+  booktitle    = {Proceedings of ACM Multimedia Asia (MM Asia)},
+  year         = {2024},
+  doi          = {10.1145/3696409.3700260},
+  arxiv        = {2308.11171},
+  html         = {https://dl.acm.org/doi/10.1145/3696409.3700260},
+  selected     = {true},
+  bibtex_show  = {true},
+  dimensions   = {true},
+  award        = {🥈 Best Student Paper Runner-Up, ACM MM Asia 2024},
+  abstract     = {We propose ViCo with three novel designs for generating engaging video comments. We use the number of "likes" as a proxy for human preference, train a reward model to align with this proxy, and optimize a comment generator via reward feedback. We collect a large video comment dataset ViCo-20k to facilitate research.}
 }
 
-@inproceedings{yang2025transferring,
-  title     = {Transferring Foundation Models for Generalizable Robotic Manipulation},
-  author    = {Yang, Jiange and Tan, Wenhui and Jin, Chuhao and Yao, Keling and Liu, Bei and Fu, Jianlong and Song, Ruihua and Wu, Gangshan and Wang, Limin},
-  booktitle = {WACV},
-  year      = {2025},
-  abbr      = {WACV},
-  abstract  = {We transfer large-scale vision-language foundation models to robotic manipulation tasks.}
+@inproceedings{xue2023clipvip,
+  abbr         = {ICLR},
+  title        = {{CLIP-ViP}: Adapting Pre-trained Image-Text Model to Video-Language Representation Alignment},
+  author       = {Xue, Hongwei and Sun, Yuchong and Liu, Bei and Fu, Jianlong and Song, Ruihua and Li, Houqiang and Luo, Jiebo},
+  booktitle    = {International Conference on Learning Representations (ICLR)},
+  year         = {2023},
+  arxiv        = {2209.06430},
+  html         = {https://iclr.cc/virtual/2023/poster/11587},
+  selected     = {true},
+  bibtex_show  = {true},
+  dimensions   = {true},
+  abstract     = {We propose CLIP-ViP, an Omnisource Cross-modal Learning method equipped with a Video Proxy mechanism, adapting the image-text pre-trained CLIP model for video-language post-pretraining. Our approach significantly improves CLIP's performance on video-text retrieval and achieves state-of-the-art results on MSR-VTT, DiDeMo, LSMDC, and ActivityNet.}
 }
 
-@inproceedings{tan2025rold,
-  title     = {RoLD: Robot Latent Diffusion for Multi-task Policy Modeling},
-  author    = {Tan, Wenhui and Liu, Bei and Zhang, Junbo and Song, Ruihua and Fu, Jianlong},
-  booktitle = {MMM},
-  year      = {2025},
-  abbr      = {MMM},
-  note      = {Best Paper},
-  abstract  = {We propose a robot latent diffusion model for multi-task policy learning.}
+@inproceedings{xue2022advancing,
+  abbr         = {CVPR},
+  title        = {Advancing High-Resolution Video-Language Representation with Large-Scale Video Transcriptions},
+  author       = {Xue, Hongwei and Hang, Tiankai and Zeng, Yanhong and Sun, Yuchong and Liu, Bei and Yang, Huan and Fu, Jianlong and Guo, Baining},
+  booktitle    = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  pages        = {5026--5035},
+  year         = {2022},
+  doi          = {10.1109/CVPR52688.2022.00498},
+  arxiv        = {2111.10337},
+  html         = {https://openaccess.thecvf.com/content/CVPR2022/html/Xue_Advancing_High-Resolution_Video-Language_Representation_With_Large-Scale_Video_Transcriptions_CVPR_2022_paper.html},
+  selected     = {true},
+  bibtex_show  = {true},
+  dimensions   = {true},
+  abstract     = {We propose HD-VILA, a High-resolution and Diversified VIdeo-LAnguage pre-training model. We collect 371.5k hours of 720p videos across 15 YouTube categories. HD-VILA achieves new state-of-the-art on 10 VL understanding tasks, improving SOTA by 40.4% R@1 on zero-shot MSR-VTT text-to-video retrieval.}
+}
+
+@inproceedings{huang2021seeing,
+  abbr         = {CVPR},
+  title        = {Seeing Out of t{H}e b{O}x: End-to-End Pre-training for Vision-Language Representation Learning},
+  author       = {Huang, Zhicheng and Zeng, Zhaoyang and Huang, Yupan and Liu, Bei and Fu, Dongmei and Fu, Jianlong},
+  booktitle    = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  pages        = {12976--12985},
+  year         = {2021},
+  note         = {Oral},
+  arxiv        = {2104.03135},
+  html         = {https://openaccess.thecvf.com/content/CVPR2021/html/Huang_Seeing_Out_of_the_Box_End-to-End_Pre-Training_for_Vision-Language_Representation_CVPR_2021_paper.html},
+  selected     = {true},
+  bibtex_show  = {true},
+  dimensions   = {true},
+  abstract     = {We propose SOHO to "See Out of tHe bOx", an end-to-end vision-language pre-training framework that takes a whole image as input without requiring bounding box annotations, enabling 10× faster inference than region-based approaches. SOHO uses a dynamic visual dictionary for cross-modal understanding.}
+}
+
+@inproceedings{xue2021probing,
+  abbr         = {NeurIPS},
+  title        = {Probing Inter-modality: Visual Parsing with Self-Attention for Vision-and-Language Pre-training},
+  author       = {Xue, Hongwei and Huang, Yupan and Liu, Bei and Peng, Houwen and Fu, Jianlong and Li, Houqiang and Luo, Jiebo},
+  booktitle    = {Advances in Neural Information Processing Systems (NeurIPS)},
+  volume       = {34},
+  pages        = {4514--4528},
+  year         = {2021},
+  arxiv        = {2106.13488},
+  html         = {https://proceedings.neurips.cc/paper/2021/hash/23fa71cc32babb7b91130824466d25a5-Abstract.html},
+  selected     = {true},
+  bibtex_show  = {true},
+  dimensions   = {true},
+  abstract     = {We propose a fully Transformer visual embedding for Vision-Language Pre-training (VLP), introducing a metric named Inter-Modality Flow (IMF) to measure vision-language interaction, and a Masked Feature Regression (MFR) mechanism to promote inter-modality learning.}
+}
+
+@inproceedings{huang2021unifying,
+  abbr         = {ACM MM},
+  title        = {Unifying Multimodal Transformer for Bi-directional Image and Text Generation},
+  author       = {Huang, Yupan and Xue, Hongwei and Liu, Bei and Lu, Yutong},
+  booktitle    = {Proceedings of the 29th ACM International Conference on Multimedia (MM)},
+  pages        = {1138--1147},
+  year         = {2021},
+  doi          = {10.1145/3474085.3481540},
+  arxiv        = {2110.09753},
+  html         = {https://dl.acm.org/doi/10.1145/3474085.3481540},
+  selected     = {true},
+  bibtex_show  = {true},
+  dimensions   = {true},
+  abstract     = {We propose a unified image-and-text generative framework using a single multimodal Transformer to jointly study bi-directional image-to-text and text-to-image generation tasks, with two-level granularity feature representations and sequence-level training.}
+}
+
+@inproceedings{liu2018beyond,
+  abbr         = {ACM MM},
+  title        = {Beyond Narrative Description: Generating Poetry from Images by Multi-Adversarial Training},
+  author       = {Liu, Bei and Fu, Jianlong and Kato, Makoto P. and Yoshikawa, Masatoshi},
+  booktitle    = {Proceedings of the 26th ACM International Conference on Multimedia (MM)},
+  pages        = {783--791},
+  year         = {2018},
+  doi          = {10.1145/3240508.3240587},
+  arxiv        = {1804.08473},
+  html         = {https://dl.acm.org/doi/10.1145/3240508.3240587},
+  selected     = {true},
+  bibtex_show  = {true},
+  dimensions   = {true},
+  award        = {🏆 Best Paper Award, ACM Multimedia 2018},
+  abstract     = {We propose a multi-adversarial training framework via policy gradient to generate poems from images, jointly learning cross-modal relevance and poetic language style. We introduce a deep coupled visual-poetic embedding and two discriminative networks, and release two poem datasets including the first human-annotated image-poem pair dataset.}
 }
