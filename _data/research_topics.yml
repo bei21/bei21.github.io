@@ -1,0 +1,16 @@
+- id: document_agents
+  title: Document Intelligence & AI Agents
+  nav_title: Documents & agents
+  current: true
+
+- id: embodied
+  title: Embodied Intelligence
+  nav_title: Robotics
+
+- id: vision_language
+  title: Vision–Language Representation Learning
+  nav_title: Vision & language
+
+- id: generation
+  title: Multimodal Generation
+  nav_title: Generation

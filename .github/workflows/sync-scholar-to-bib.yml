@@ -24,7 +24,10 @@ jobs:
       - name: Install deps
         run: |
           pip install --upgrade pip
-          pip install scholarly bibtexparser
+          pip install scholarly 'bibtexparser>=1.4,<2'
+
+      - name: Check bibliography preservation
+        run: python -m unittest discover -s tests -v
 
       - name: Sync scholar to bib
         env:
@@ -32,8 +35,6 @@ jobs:
           OUTPUT_BIB: "_bibliography/papers.bib"
           # Optional (recommended if you hit anti-bot):
           # SCRAPERAPI_KEY: ${{ secrets.SCRAPERAPI_KEY }}
-          TOP_SELECTED: "5"
-          SELECT_MODE: "recent_then_cited"
 
         run: |
           python scripts/sync_scholar_to_bib.py

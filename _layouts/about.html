@@ -1,82 +1,73 @@
 ---
 layout: default
 ---
+<div class="post homepage">
+  <section class="profile-intro" aria-labelledby="profile-name">
+    {% if page.profile.image %}
+      <div class="profile-portrait">
+        {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+        {% if page.profile.image_circular %}
+          {% assign profile_image_class = "img-fluid rounded-circle" %}
+        {% else %}
+          {% assign profile_image_class = "img-fluid rounded" %}
+        {% endif %}
+        {% include figure.html
+          path=profile_image_path
+          class=profile_image_class
+          width=page.profile.image_width
+          height=page.profile.image_height
+          alt=site.title
+          cache_bust=true %}
+      </div>
+    {% endif %}
 
-<!-- about.html -->
-      <div class="post">
-        <header class="post-header">
-          <h1 class="post-title">
-            {% if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %}
-          </h1>
-          <p class="desc">{{ page.subtitle }}</p>
-        </header>
+    <header class="post-header">
+      <h1 id="profile-name" class="post-title">
+        {% if site.title == "blank" %}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{% else %}{{ site.title }}{% endif %}
+      </h1>
+      <p class="desc">{{ page.subtitle }}</p>
+    </header>
 
-        <article>
-          {% if page.profile -%}
-          <div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
-            {%- if page.profile.image %}
-              {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
+    <div class="profile-bio">{{ content }}</div>
+  </section>
 
-              {% if page.profile.image_circular %}
-                {%- assign profile_image_class = "img-fluid z-depth-1 rounded-circle" -%}
-              {% else %}
-                {%- assign profile_image_class = "img-fluid z-depth-1 rounded" -%}
-              {% endif %}
+  {% if page.news and site.announcements.enabled %}
+    <section class="home-section" aria-labelledby="latest-news">
+      <div class="section-heading">
+        <h2 id="latest-news">News</h2>
+        <a class="section-link" href="{{ '/news/' | relative_url }}">All news <span aria-hidden="true">↗</span></a>
+      </div>
+      {% include news.html limit=true %}
+    </section>
+  {% endif %}
 
-              {% include figure.html
-              path=profile_image_path
-              class=profile_image_class
-              alt=page.profile.image
-              cache_bust=true -%}
-            {% endif -%}
-            {%- if page.profile.more_info %}
-            <div class="more-info">
-              {{ page.profile.more_info }}
-            </div>
-            {%- endif %}
-          </div>
-          {%- endif %}
+  {% if page.latest_posts %}
+    <section class="home-section" aria-labelledby="latest-posts">
+      <div class="section-heading">
+        <h2 id="latest-posts">Latest posts</h2>
+        <a class="section-link" href="{{ '/blog/' | relative_url }}">All posts <span aria-hidden="true">↗</span></a>
+      </div>
+      {% include latest_posts.html %}
+    </section>
+  {% endif %}
 
-          <div class="clearfix">
-            {{ content }}
-          </div>
+  {% if page.selected_papers %}
+    <section class="home-section" aria-labelledby="selected-publications">
+      <div class="section-heading">
+        <h2 id="selected-publications">Selected Publications</h2>
+        <a class="section-link" href="https://scholar.google.com/citations?user={{ site.scholar_userid }}">Full list on Google Scholar <span aria-hidden="true">↗</span></a>
+      </div>
+      <p class="section-note">Representative work by research area. Select a paper for figures, demos, and links.</p>
+      {% include selected_papers.html %}
+    </section>
+  {% endif %}
 
-          <!-- News -->
-          {% if page.news and site.announcements.enabled -%}
-            <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">News</a></h2>
-            {%- include news.html limit=true %}
-          {%- endif %}
+  {% if page.awards %}{% include awards.html %}{% endif %}
 
-          <!-- Latest posts -->
-          {% if page.latest_posts -%}
-            <h2><a href="{{ '/blog/' | relative_url }}" style="color: inherit;">latest posts</a></h2>
-            {%- include latest_posts.html %}
-          {%- endif %}
-
-          <!-- Selected papers -->
-          {% if page.selected_papers -%}
-            <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Selected Publications</a></h2>
-            {%- include selected_papers.html %}
-          {%- endif %}
-
-          {% if page.awards %}
-              <h2><a style="color: inherit;">Selected Publications</a></h2>
-              {% include awards.html %}
-          {% endif %}
-
-          <!-- Social -->
-          {%- if page.social %}
-            <div class="social">
-              <div class="contact-icons">
-                {% include social.html %}
-              </div>
-
-              <div class="contact-note">
-                {{ site.contact_note }}
-              </div>
-
-            </div>
-          {%- endif %}
-        </article>
-
+  {% if page.social %}
+    <div class="social">
+      <div class="contact-icons">{% include social.html %}</div>
+      <div class="contact-note">{{ site.contact_note }}</div>
+    </div>
+  {% endif %}
 </div>

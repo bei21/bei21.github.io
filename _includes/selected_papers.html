@@ -1,4 +1,22 @@
 
-          <div class="publications">
-            {% bibliography -f {{ site.scholar.bibliography }} --group_by none --query @*[selected=true]* %}
-          </div>
+<div class="publications" data-publications>
+  <div class="publication-toolbar">
+    <nav class="research-topics" aria-label="Research areas">
+      {% for topic in site.data.research_topics %}
+        <a href="#topic-{{ topic.id }}">{{ topic.nav_title }}</a>
+      {% endfor %}
+    </nav>
+    <button type="button" class="publications-toggle" aria-controls="selected-paper-list" hidden>Expand all</button>
+  </div>
+  <div id="selected-paper-list">
+    {% for topic in site.data.research_topics %}
+      <section class="research-topic" aria-labelledby="topic-{{ topic.id }}">
+        <h3 id="topic-{{ topic.id }}" class="research-topic-title">
+          {{ topic.title }}
+          {% if topic.current %}<span class="topic-note">Current focus</span>{% endif %}
+        </h3>
+        {% bibliography -f {{ site.scholar.bibliography }} --group_by none --query @*[selected=true && topic={{ topic.id }}] %}
+      </section>
+    {% endfor %}
+  </div>
+</div>

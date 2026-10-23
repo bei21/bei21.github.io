@@ -1,4 +1,17 @@
 $(document).ready(function() {
+  // Close the mobile menu when navigating to a section on the current page.
+  $('#navbarNav .nav-link').on('click', function() {
+    if (this.hash && this.origin === window.location.origin && this.pathname === window.location.pathname) {
+      const menu = $('#navbarNav');
+      if (menu.hasClass('collapsing') && $('.navbar-toggler').attr('aria-expanded') === 'true') {
+        // Bootstrap ignores hide requests while the opening animation is running.
+        menu.one('shown.bs.collapse', function() { menu.collapse('hide'); });
+      } else {
+        menu.collapse('hide');
+      }
+    }
+  });
+
   // add toggle functionality to abstract and bibtex buttons
   $('a.abstract').click(function() {
     $(this).parent().parent().find(".abstract.hidden").toggleClass('open');

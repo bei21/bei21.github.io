@@ -1,9 +1,8 @@
-name: Update Google Scholar Citations
+name: Refresh citation archive (manual only)
 
 on:
-  schedule:
-    - cron: "0 2 * * 1"   # Every Monday at 02:00 UTC
-  workflow_dispatch:        # Allow manual trigger from GitHub Actions tab
+  # Citation counts are no longer displayed; do not scrape them on a schedule.
+  workflow_dispatch:
 
 jobs:
   update-citations:

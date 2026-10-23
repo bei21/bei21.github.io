@@ -1,3 +1,10 @@
+# Bei Liu's homepage
+
+Site-specific content, publication media, Scholar sync, and preview instructions:
+[Homepage maintenance](docs/homepage-maintenance.md).
+
+The theme documentation follows below.
+
 # al-folio
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [maintainers]: https://img.shields.io/badge/maintainers-4-success.svg 'Number of maintainers'
@@ -469,9 +476,11 @@ If you have a different question, please ask using [Discussions](https://github.
 
 ### Publications
 
-Your publications' page is generated automatically from your BibTex bibliography.
+Publications are generated automatically from your BibTeX bibliography.
 Simply edit `_bibliography/papers.bib`.
-You can also add new `*.bib` files and customize the look of your publications however you like by editing `_pages/publications.md`.
+You can also add new `*.bib` files and customize the paper cards in `_layouts/bib.html`.
+This homepage shows selected papers by topic and links to Google Scholar for the full record;
+see [Homepage maintenance](docs/homepage-maintenance.md) for the site's selection and navigation settings.
 
 <p align="center"><img src="https://raw.githubusercontent.com/alshedivat/al-folio/master/assets/img/publications-screenshot.png" width=800></p>
 

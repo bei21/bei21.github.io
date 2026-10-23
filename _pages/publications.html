@@ -1,0 +1,29 @@
+---
+layout: null
+title: Publications
+permalink: /publications/
+nav: true
+nav_order: 2
+nav_url: /#selected-publications
+sitemap: false
+---
+
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Selected publications</title>
+    <meta name="robots" content="noindex">
+    <link rel="canonical" href="{{ '/' | absolute_url }}">
+    <script>
+      window.location.replace({{ '/' | relative_url | jsonify }} + (window.location.hash || '#selected-publications'));
+    </script>
+    <noscript>
+      <meta http-equiv="refresh" content="0; url={{ '/#selected-publications' | relative_url }}">
+    </noscript>
+  </head>
+  <body>
+    <p><a href="{{ '/#selected-publications' | relative_url }}">View selected publications</a> or the <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}">full list on Google Scholar</a>.</p>
+  </body>
+</html>
