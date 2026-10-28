@@ -154,6 +154,27 @@ is manual-only, with no scheduled scrape. Existing citation data and Scholar IDs
 are retained for reference and stable matching; Google Scholar remains the
 public entry point for up-to-date citation information.
 
+## Visitor analytics
+
+Google Analytics 4 uses the web-stream measurement ID `G-Z82WY9SRK2`, supplied
+by Bei. `_config.yml` enables the existing Google tag integration. The tag is
+rendered only when `JEKYLL_ENV=production`, as in the deployment workflow, and
+loads only on the hostname in `site.url` (`bei21.github.io`). Local previews do
+not load the tracker or contribute visits, even when using a production build.
+
+Sign in to [Google Analytics](https://analytics.google.com/), select the homepage
+property, and open Reports → Realtime to check incoming activity. Standard
+reports show traffic trends, referrals, and approximate visitor locations.
+Initial data collection can take up to 30 minutes, and standard reports update
+later. Analytics does not recover visits from before the tag was installed.
+
+In Admin → Data streams → the homepage web stream, keep Enhanced measurement
+and Outbound clicks enabled to collect visits to external paper, project, and
+code links. GA4 records these as `click` events with the destination in
+`link_url`. These options are managed in the Google Analytics account; the
+website integration does not change those account settings. No additional
+custom click handler is needed for these outbound links.
+
 ## Preview
 
 With Ruby 3.2+, Bundler, ImageMagick, and Jupyter installed:
