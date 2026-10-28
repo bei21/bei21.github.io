@@ -2,11 +2,11 @@
 
 The site uses al-folio / Jekyll. Publication content lives in
 `_bibliography/papers.bib`; the homepage renders selected entries by topic.
-The Publications navigation link goes directly to `/#selected-publications`,
-and the full publication record is linked through Google Scholar. There is no
-separate local publication list to maintain. The old `/publications/` URL redirects
-to the homepage selection and preserves paper fragments when JavaScript is
-enabled; without JavaScript it redirects to the selection heading.
+The top navigation contains About and News; the homepage selection is the only
+publication display. The full publication record is linked through Google
+Scholar beside the Selected Publications heading. The old `/publications/` URL
+redirects to the homepage selection and preserves paper fragments when JavaScript
+is enabled; without JavaScript it redirects to the selection heading.
 
 ## Curated publications
 
@@ -20,6 +20,10 @@ each entry's `topic` field:
 | `embodied` | STP, TPM (Transferring Foundation Models), RoLD |
 | `vision_language` | CLIP-ViP, LF-VILA, HD-VILA, SOHO, Probing Inter-modality |
 | `generation` | ViCo, FGLA (landscape animation), Beyond Narrative Description (image-to-poem) |
+
+The shared selection note describes first-author work and projects Bei led with
+students Bei mentored, as confirmed by Bei on October 28, 2026. It explains the
+scope of the whole selection without repeating role labels on each paper.
 
 The selection includes the three recent document/agent projects, award-winning
 papers, and earlier work with substantial citation impact. ViCo represents
